@@ -8,15 +8,13 @@ def prime?(num)
   divis_array = (2...num)
   if num < 2 
     false
-  end
-  
-  
- divis_array.each do |prime_test, is_prime|
-     if num % prime_test == 0 && num < 1
-       return false
-   elsif num >= 2
-      num % prime_test
-    end
+  elsif num == 2 
+    true 
+  else 
+     divis_array.each do |prime_test, is_prime|
+      if num % prime_test == 0 
+         return false
+      end
   end
        is_prime << num
 
