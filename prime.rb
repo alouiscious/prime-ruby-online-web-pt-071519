@@ -11,11 +11,15 @@ def prime?(num)
   elsif num == 2 
     true 
   else 
-     divis_array.each do |prime_test, is_prime|
+    divis_array.each do |prime_test|
       if num % prime_test == 0 
-         return false
+        return false
+      else
+        return true
       end
+    end
+    
+    
   end
-       is_prime << num
 
 end
