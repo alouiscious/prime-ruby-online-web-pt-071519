@@ -4,7 +4,6 @@ require 'pry'
   
 
 def prime?(num)
-  is_prime = []
   divis_array = (2...num)
   if num < 2 
     false
@@ -14,12 +13,8 @@ def prime?(num)
     divis_array.each do |prime_test|
       if num % prime_test == 0 
         return false
-      else
-        return true
       end
     end
-    
-    
+    true  # true after prime test has completly run
   end
-
 end
