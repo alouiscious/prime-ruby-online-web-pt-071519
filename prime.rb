@@ -7,8 +7,8 @@ def prime?(num)
   divis_array = (2...num)
   if num < 2 
     false
-  elsif num == 2 
-    true 
+  # num == 2 elsif 
+    # true 
   else 
     divis_array.each do |prime_test|
       if num % prime_test == 0 
